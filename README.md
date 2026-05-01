@@ -1,1 +1,32 @@
-# repos
+# repos<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Perbaikan: Tag LINK diperbaiki -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form">
+        <!-- Tambahkan gambar background atau placeholder -->
+        <img src="bg.jpg" alt="Background" class="bg-image">
+        <h1>Login</h1>
+        
+        <input type="email" placeholder="Email" required>
+        
+        <!-- Perbaikan: class dan onclick -->
+        <div class="form-group">
+            <input id="Password" type="password" placeholder="Password" required>
+            <button class="btn-show" type="button" onclick="switchPasswordType()">
+                <i id="passIcon" class="bi bi-eye"></i>
+            </button>
+        </div>
+        
+        <button class="btn-primary" type="submit">Login</button>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
